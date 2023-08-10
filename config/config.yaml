@@ -1,3 +1,5 @@
 base:
   api-key: '232be84f339d3e930af6007bc0753f483e40374d50bbde033f3d1b1030977a25aa52f71c9c46e43224c1febbff7ccf56'
   url: 'https://clipdrop-api.co/'
+  baidu-api-key: '24.1a4f7f187211542c48c952aaf0b508ef.2592000.1694277262.282335-37494517'
+  baidu-pet-api: 'https://github.com/conantime/pet-server.git'
