@@ -9,8 +9,9 @@ router.get('/image/ai', (req, res) => {
     imgSer.requestImage({})
 })
 
-router.get('/image/reco', (req, res) => {
-    recogn.sendFile()
+router.get('/image/reco', async (req, res) => {
+    console.log('rrrrr', (await recogn.sendFile()).data)
+    res.send(recogn.sendFile())
 })
 
 export default router

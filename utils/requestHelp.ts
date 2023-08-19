@@ -1,24 +1,20 @@
-const request = require('request');
-const https = require('https');
+import {AxiosResponse} from "axios";
+
+const axios = require('axios')
 
 const req = {
     get: (link: string, data: Object) => {
     },
 
     post: (link: string, data: any, headers: any = {}) => {
+        console.log(data)
+        console.log(link)
         const options = {
-            method: 'POST',
             headers: {
                 ...headers
             }
         }
-        const req = https.request(link, options, (res: any) => {
-            console.log(res)
-        })
-
-        req.on('error', (error:any) => {
-            console.log(error)
-        })
+        return axios.post(link, data, options)
 
     }
 }
